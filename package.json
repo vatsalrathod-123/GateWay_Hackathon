@@ -1,0 +1,16 @@
+{
+  "name": "frontline-ai",
+  "version": "1.0.0",
+  "description": "Autonomous Customer Support Triage Engine with Guardrails & Human Escalation",
+  "main": "server/src/server.js",
+  "type": "module",
+  "scripts": {
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "eval": "node evaluation/evaluate.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
